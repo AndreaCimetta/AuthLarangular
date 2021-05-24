@@ -1,4 +1,4 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 
 import { FullLayoutComponent } from './full-layout.component';
 
@@ -6,7 +6,7 @@ describe('FullLayoutComponent', () => {
   let component: FullLayoutComponent;
   let fixture: ComponentFixture<FullLayoutComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
       declarations: [ FullLayoutComponent ]
     })
